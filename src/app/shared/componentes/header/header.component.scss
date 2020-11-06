@@ -1,0 +1,29 @@
+
+.header-row {
+    width: 92.5%;
+    margin: 0 auto;
+    
+}
+.color-navbar {
+    background-color: red;
+    color: white;
+}
+nav > a {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+.cart-font {
+    font-family: 'Sansita Swashed', cursive;
+    text-decoration: none;
+    color: black;
+}
+.shop-icon:hover, .cart-font    {
+    text-decoration: none;
+    color:black;
+}
+.cart-model{
+    text-decoration: none;
+    color:black;
+}

@@ -1,4 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap:10px 30px;
+}
+
+@media (min-width: 705px) and (max-width: 900px){
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px){
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

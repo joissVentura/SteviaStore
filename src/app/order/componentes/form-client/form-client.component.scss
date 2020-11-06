@@ -1,0 +1,16 @@
+.example-form {
+    display:flex;
+    flex-direction: column;
+}
+p{
+    width: auto;
+}
+div{
+    display: inline-block;
+}
+form{
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}

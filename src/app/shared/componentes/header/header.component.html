@@ -1,1 +1,15 @@
-<p>header works!</p>
+<mat-toolbar class = "color-navbar">
+    <mat-toolbar-row>
+        <div class="row between-xs middle-xs header-row">
+            <nav>
+                <a mat-button routerLink="/" routerLinkActive="active">Inicio</a>
+                <a mat-button routerLink="/tienda" routerLinkActive="active">Tienda</a>
+                <a mat-button routerLink="/nosotros" routerLinkActive="active">Nosotros</a>
+            </nav>
+            <a routerLink = "/carrito" mat-raised-button [matBadge]="total$ | async" matBadgeColor="primary" class="cart-model">
+                <mat-icon class="shop-icon">shopping_cart</mat-icon>
+                <span class = "cart-font">Carrito</span>
+            </a>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>

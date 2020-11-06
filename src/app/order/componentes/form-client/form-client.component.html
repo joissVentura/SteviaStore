@@ -1,0 +1,63 @@
+<form class="example-form">
+    
+    <table class="example-full-width" cellspacing="0">
+        <tr>
+            <td>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Nombres</mat-label>
+                    <input matInput>
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Apellidos</mat-label>
+                    <input matInput>
+                </mat-form-field>
+            </td>
+        </tr>
+    </table>
+
+    <div>
+        <mat-form-field class="example-full-width">
+            <mat-label>Dirección</mat-label>
+            <textarea matInput placeholder="Ej. Av. Mercedes"></textarea>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>Dirección 2</mat-label>
+            <textarea matInput></textarea>
+        </mat-form-field>
+    </div>
+
+    <table class="example-full-width" cellspacing="0">
+        <tr>
+            <td>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Región</mat-label>
+                    <input matInput placeholder="Ej. Lima">
+                </mat-form-field>
+            </td>
+            <td>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Provincia</mat-label>
+                    <input matInput placeholder="Ej. Huaura">
+                </mat-form-field>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Distrito</mat-label>
+                    <input matInput placeholder="Ej. Huacho">
+                </mat-form-field>
+            </td> 
+            <td>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Código postal</mat-label>
+                    <input matInput #postalCode maxlength="5" placeholder="Ej. 94105" value="94043">
+                    <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+                </mat-form-field>
+            </td>
+        </tr>
+        
+    </table>
+</form>
