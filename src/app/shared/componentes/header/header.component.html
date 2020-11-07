@@ -1,4 +1,4 @@
-<mat-toolbar class = "color-navbar">
+<!-- <mat-toolbar class="color-navbar">
     <mat-toolbar-row>
         <div class="row between-xs middle-xs header-row">
             <nav>
@@ -6,10 +6,48 @@
                 <a mat-button routerLink="/tienda" routerLinkActive="active">Tienda</a>
                 <a mat-button routerLink="/nosotros" routerLinkActive="active">Nosotros</a>
             </nav>
-            <a routerLink = "/carrito" mat-raised-button [matBadge]="total$ | async" matBadgeColor="primary" class="cart-model">
+            <a routerLink="/carrito" mat-raised-button [matBadge]="total$ | async" matBadgeColor="primary"
+                class="cart-model">
                 <mat-icon class="shop-icon">shopping_cart</mat-icon>
-                <span class = "cart-font">Carrito</span>
+                <span class="cart-font">Carrito</span>
             </a>
         </div>
     </mat-toolbar-row>
-</mat-toolbar>
+</mat-toolbar> -->
+<nav class="navbar navbar-expand-lg color-navbar navbar-light">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a mat-button routerLink="/" routerLinkActive="active">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Tienda
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" routerLink="/tienda/postres">Postres</a>
+                    <a class="dropdown-item" routerLink="/tienda/ropa">Ropa</a>
+                    <a class="dropdown-item" routerLink="/tienda/bebidas">Bebidas</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" routerLink="/tienda">Todos los productos</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a mat-button routerLink="/nosotros" routerLinkActive="active">Nosotros</a>
+            </li>
+        </ul>
+    </div>
+    <a routerLink="/carrito" mat-raised-button [matBadge]="total$ | async" matBadgeColor="primary"
+                class="cart-model ml-auto">
+                <mat-icon class="shop-icon">shopping_cart</mat-icon>
+                <span class="cart-font">Carrito</span>
+    </a>
+    </div>
+</nav>

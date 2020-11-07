@@ -8,19 +8,34 @@
     background-color: red;
     color: white;
 }
-nav > a {
+.dropdown-item{
+    font-family: 'Sansita Swashed', cursive;
+}
+nav > a{
     font-family: 'Sansita Swashed', cursive;
     font-size: 16px;
     text-decoration: none;
     color: white;
 }
+li.nav-item > a{
+    color:white;
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 16px;
+}
+li.nav-item > a:hover, li.nav-item > a:active {
+    color:white;
+    text-decoration: none;
+}
 .cart-font {
     font-family: 'Sansita Swashed', cursive;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .shop-icon:hover, .cart-font    {
     text-decoration: none;
+    color:black;
+}
+.shop-icon{
     color:black;
 }
 .cart-model{

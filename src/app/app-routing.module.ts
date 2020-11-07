@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { LayoutComponent } from './layout/layout.component';
+import { NotFoundComponent } from './not-found/componentes/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
       {
         path: 'carrito',
         loadChildren: () => import('./order/order.module').then(o => o.OrderModule)
+      },
+      {
+        path: '**',
+        component: NotFoundComponent
       }
     ]
   }

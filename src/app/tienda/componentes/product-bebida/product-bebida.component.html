@@ -1,1 +1,6 @@
-<p>product-bebida works!</p>
+<h2 class = "section-product-title">Todas las bebidas</h2>
+<div class = "product-grid">
+    <app-product-grid *ngFor = "let product of products" 
+    (productClicked) = "clickProduct($event)" 
+    [product] = "product"></app-product-grid>
+</div>

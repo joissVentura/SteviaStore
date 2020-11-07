@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RopaService } from '../../../core/services/ropa.service';
+import { Product } from '../../../core/model/product.model';
 
 @Component({
   selector: 'app-product-ropa',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductRopaComponent implements OnInit {
 
-  constructor() { }
+  products: Product[] = [];
+  constructor(private ropaService: RopaService) { }
 
   ngOnInit(): void {
+    this.products = this.ropaService.getAllProducts();
   }
+  clickProduct(id: number): void{
+    console.log('El id es: ' + id);
+  }
+
 
 }

@@ -1,10 +1,21 @@
-<div>
-    <img [src]="product.image" alt="">
-</div>
-<div>
-    <ul>
-        <li>Nombre: {{product.title}}</li>
-        <li>Precio: {{product.price | currency}}</li>
-    </ul>
-    <p>Descripcion: {{product.description}}</p>
+
+<div class="contenedor row">
+    <div class = "crop-image col-xs-6">
+        <img [src]="product.image" [alt]="product.title">
+    </div>
+    <div class = "product-details col-xs-6">
+        
+        <div class = "row">
+            <p class = "product-subtitle ">Nombre: <span>{{ product.title }}</span></p>
+        </div>
+        <div class="row">
+            <p class = "product-subtitle ">Precio: <span>{{ product.price | currency}}</span></p>
+        </div>
+        <div class="row">
+            <p class = "product-subtitle ">Descripcion: <span>{{ product.description }}</span></p>
+        </div>
+        <div class="row">
+            
+        </div>
+    </div>
 </div>

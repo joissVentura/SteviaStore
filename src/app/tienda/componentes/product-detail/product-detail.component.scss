@@ -1,0 +1,37 @@
+.crop-image{
+    height: 250px;
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+    
+    img{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        max-height: 100%;
+    }
+}
+.product-details{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor{
+    width: 70%;
+    margin: 0 auto;
+}
+.product-subtitle{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Sansita Swashed', cursive;
+}
+p{
+    span{
+        font-weight: 100;
+        font-size: 18px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
